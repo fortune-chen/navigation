@@ -1,0 +1,126 @@
+struct Position
+{
+	double		    x;
+	double  		y;
+};
+
+struct Contour
+{
+	Position contour_point[32];
+};
+
+struct OneRoom
+{
+	int32		room_id;
+	Position 	room_centre;
+	double 		room_area;
+	int32		clean_num;
+	boolean		forbid;
+	Contour		room_points;
+};
+
+struct RoomPublish
+{
+	int32 					room_num;
+	sequence<OneRoom> 		room_info;
+};
+
+struct Param
+{
+    double     			    param1;     // 房间面积的最大约束值
+    double     			    param2;     // 房间面积的最小约束值    
+    int32     			    param3;     // 相邻系数：系数越大房间越少；
+    int32                   param4;     // 迭代次数；
+    double                  param5;     // 最小临界点距离因子为：1.7
+    double                  param6;     // 融合系数，小于这个值的房间会被合并到其他房间；
+};
+
+struct SaveMap
+{
+    boolean     			flag;
+};
+
+struct RoomOptimize
+{
+    boolean     			flag;
+};
+
+struct RoomSplit
+{
+    boolean     			flag;
+    Param                   split_param;
+};
+
+struct VisualWall
+{
+    boolean     			flag;
+    Position                point[2];
+};
+
+struct ForbidArea
+{
+    boolean     			flag;
+    Position                point;
+    double                  width;
+    double                  height;    
+};
+
+struct RoomMerge
+{   
+    boolean     			flag;
+    int32                   room_num1;
+    int32                   room_num2;    
+};
+
+struct RoomInfo
+{   
+    boolean     			flag;
+};
+
+struct RemoveMap
+{   
+    boolean     			flag;
+    int32                   mapid;
+};
+
+struct FunctionOrder 
+{
+    SaveMap                 set_savemap;
+    RemoveMap               set_removemap;
+    RoomOptimize            set_optimize;           
+    RoomSplit               set_split;           
+    VisualWall     		    set_wall;
+    ForbidArea              set_area;
+    RoomMerge               set_merge;
+    RoomInfo                set_info;
+};
+
+struct MapColor 
+{
+    short                   color_b;           
+    short                   color_g;
+    short                   color_r;
+};
+
+
+struct MapServer 
+{
+    short                   channels;           
+    short      		        rows;
+    short                   cols;
+    sequence<MapColor> 		point_value;
+};
+
+struct MapModify 
+{
+    int32                   mapid;   
+
+    // int32            
+};
+
+struct Message
+{
+	unsigned long           index;
+	string                  message;
+};
+        

@@ -1,0 +1,53 @@
+struct TF2RequestTime
+{
+	unsigned long time_sec;
+	unsigned long time_nsec;
+};
+
+struct TF2RequestDuration
+{
+	long duration_sec;
+	long duration_nsec;
+};
+
+enum TF2TransformType
+{
+	kPoseStamped,
+	kTransformStamped,
+	kPointStamped,
+	kPointCloud2
+};
+
+// type 											serialized (at least)
+// geometry_msgs/PoseStamped						76
+// geometry_msgs/TransformStamped			   		80
+// geometry_msgs/PointStamped						72
+// sensor_msgs/PointCloud2							128 (来自gazebo的 sensor_msgs/LaserScan 单次数据大小为2945)
+struct TF2Transform
+{
+	TF2TransformType type;
+	// 除了 sensor_msgs/PointCloud2	，其他数据序列化后的大小一般不超过128byte
+	sequence<char, 4096> serialized;
+};
+
+struct TF2Request
+{
+	string request_id;
+	string path;
+	string source_frame;
+	string target_frame;
+	string fixed_frame;
+	TF2RequestTime source_time;
+	TF2RequestTime target_time;
+	TF2RequestTime time;
+	TF2RequestDuration duration;
+	TF2Transform transform;
+};
+
+struct TF2Response
+{
+	string response_id;
+	boolean result;
+	TF2Transform transform;
+	string error_msg;
+};

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfull_coverage_path_planner.a  CMakeFiles/full_coverage_path_planner.dir/src/common.cpp.o CMakeFiles/full_coverage_path_planner.dir/src/full_coverage_path_planner.cpp.o CMakeFiles/full_coverage_path_planner.dir/src/spiral_stc.cpp.o
+/usr/bin/ranlib libfull_coverage_path_planner.a

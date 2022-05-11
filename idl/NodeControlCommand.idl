@@ -1,0 +1,6 @@
+struct NodeControlCommand
+{
+	char type;
+	char do_mapping;
+	string map_path;
+};

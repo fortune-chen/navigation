@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsensor_bridge_nav.a  CMakeFiles/sensor_bridge_nav.dir/src/global_sensor_bridge_client.cc.o CMakeFiles/sensor_bridge_nav.dir/src/sensor_bridge_client.cc.o
+/usr/bin/ranlib libsensor_bridge_nav.a

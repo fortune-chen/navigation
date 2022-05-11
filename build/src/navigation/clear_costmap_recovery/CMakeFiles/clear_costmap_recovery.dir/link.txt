@@ -1,0 +1,2 @@
+/usr/bin/ar qc libclear_costmap_recovery.a  CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o
+/usr/bin/ranlib libclear_costmap_recovery.a

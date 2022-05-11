@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtf2_ros.a  CMakeFiles/tf2_ros.dir/src/buffer.cpp.o CMakeFiles/tf2_ros.dir/src/transform_listener.cpp.o CMakeFiles/tf2_ros.dir/src/transform_broadcaster.cpp.o CMakeFiles/tf2_ros.dir/src/static_transform_broadcaster.cpp.o CMakeFiles/tf2_ros.dir/src/transform_helper.cpp.o CMakeFiles/tf2_ros.dir/__/__/__/idl_output/TF2Message.cxx.o CMakeFiles/tf2_ros.dir/__/__/__/idl_output/TF2MessagePubSubTypes.cxx.o
+/usr/bin/ranlib libtf2_ros.a

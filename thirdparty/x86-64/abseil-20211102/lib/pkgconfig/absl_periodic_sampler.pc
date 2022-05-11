@@ -1,0 +1,12 @@
+prefix=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102
+exec_prefix=${prefix}
+libdir=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102/lib
+includedir=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102/include
+
+Name: absl_periodic_sampler
+Description: Abseil periodic_sampler library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_core_headers = 20211102, absl_exponential_biased = 20211102
+Libs: -L${libdir}  -labsl_periodic_sampler
+Cflags: -I${includedir} -DNOMINMAX

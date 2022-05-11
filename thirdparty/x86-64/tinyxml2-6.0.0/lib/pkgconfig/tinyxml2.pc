@@ -1,0 +1,10 @@
+prefix=/home/mike/project/nav/slam/third-party-source/tinyxml2/tinyxml2-6.0.0/build/tinyxml2-6.0.0
+exec_prefix=${prefix}
+libdir=/home/mike/project/nav/slam/third-party-source/tinyxml2/tinyxml2-6.0.0/build/tinyxml2-6.0.0/lib
+includedir=/home/mike/project/nav/slam/third-party-source/tinyxml2/tinyxml2-6.0.0/build/tinyxml2-6.0.0/include
+
+Name: TinyXML2
+Description: simple, small, C++ XML parser
+Version: 6.0.0
+Libs: -L${libdir} -ltinyxml2
+Cflags: -I${includedir}

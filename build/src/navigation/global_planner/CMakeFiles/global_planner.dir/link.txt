@@ -1,0 +1,2 @@
+/usr/bin/ar qc libglobal_planner.a  CMakeFiles/global_planner.dir/src/astar.cpp.o CMakeFiles/global_planner.dir/src/dijkstra.cpp.o CMakeFiles/global_planner.dir/src/gradient_path.cpp.o CMakeFiles/global_planner.dir/src/grid_path.cpp.o CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o CMakeFiles/global_planner.dir/src/planner_core.cpp.o CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o
+/usr/bin/ranlib libglobal_planner.a

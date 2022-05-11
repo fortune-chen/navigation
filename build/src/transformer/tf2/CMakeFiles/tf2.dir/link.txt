@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtf2.a  CMakeFiles/tf2.dir/src/cache.cpp.o CMakeFiles/tf2.dir/src/buffer_core.cpp.o CMakeFiles/tf2.dir/src/static_cache.cpp.o
+/usr/bin/ranlib libtf2.a

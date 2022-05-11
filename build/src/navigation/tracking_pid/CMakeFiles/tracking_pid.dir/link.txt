@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtracking_pid.a  CMakeFiles/tracking_pid.dir/src/controller.cpp.o CMakeFiles/tracking_pid.dir/src/interpolator.cpp.o CMakeFiles/tracking_pid.dir/src/pid_tracker.cpp.o CMakeFiles/tracking_pid.dir/src/section_interpolation.cpp.o
+/usr/bin/ranlib libtracking_pid.a

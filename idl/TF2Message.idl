@@ -1,0 +1,8 @@
+// type 											serialized (at least)
+// geometry_msgs/TransformStamped			   		80
+struct TF2Message
+{
+	unsigned long index;
+	boolean isStatic;
+	sequence<char, 1024> serialized;
+};

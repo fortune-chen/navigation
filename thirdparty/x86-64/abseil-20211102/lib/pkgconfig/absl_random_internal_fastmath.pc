@@ -1,0 +1,12 @@
+prefix=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102
+exec_prefix=${prefix}
+libdir=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102/lib
+includedir=/home/mike/project/nav/slam/third-party-source/abseil/abseil-cpp-20211102.0/build/abseil-20211102/include
+
+Name: absl_random_internal_fastmath
+Description: Abseil random_internal_fastmath library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_bits = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

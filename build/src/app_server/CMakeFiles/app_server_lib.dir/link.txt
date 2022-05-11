@@ -1,0 +1,2 @@
+/usr/bin/ar qc libapp_server_lib.a  CMakeFiles/app_server_lib.dir/flslam_api.cpp.o CMakeFiles/app_server_lib.dir/mapping.cpp.o CMakeFiles/app_server_lib.dir/navigation.cpp.o CMakeFiles/app_server_lib.dir/trimmer.cpp.o
+/usr/bin/ranlib libapp_server_lib.a

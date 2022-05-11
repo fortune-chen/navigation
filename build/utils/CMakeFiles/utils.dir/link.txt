@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutils.a  CMakeFiles/utils.dir/debug_helper.cpp.o CMakeFiles/utils.dir/uuid_generation.cpp.o
+/usr/bin/ranlib libutils.a

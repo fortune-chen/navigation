@@ -1,0 +1,11 @@
+struct RosAdapterContent
+{
+	char type;
+	sequence<char,40960> serialized;
+};
+
+struct NavMapContent
+{
+	char type;
+	sequence<char,16777216> serialized;
+};

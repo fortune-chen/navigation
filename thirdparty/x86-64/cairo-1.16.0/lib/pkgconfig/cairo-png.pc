@@ -1,0 +1,12 @@
+prefix=/home/mike/project/nav/slam/third-party-source/cairo/cairo-1.16.0/out/cairo-1.16.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-png
+Description: PNG functions for cairo graphics library
+Version: 1.16.0
+
+Requires: cairo libpng16
+Libs:  
+Cflags: -I${includedir}/cairo 

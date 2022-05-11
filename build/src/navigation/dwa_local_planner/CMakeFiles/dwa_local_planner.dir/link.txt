@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdwa_local_planner.a  CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o
+/usr/bin/ranlib libdwa_local_planner.a

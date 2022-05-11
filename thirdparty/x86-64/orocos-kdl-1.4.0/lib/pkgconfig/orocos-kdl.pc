@@ -1,0 +1,11 @@
+prefix=/home/mike/project/nav/slam/third-party-source/orocos-kdl/orocos_kinematics_dynamics-1.4.0/orocos_kdl/build/orocos-kdl-1.4.0
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: orocos-kdl
+Description: The Orocos Kinematics and Dynamics Library 
+Requires: 
+Version: 1.4.0
+Libs: -L${libdir} -lorocos-kdl
+Cflags: -I${includedir}  -I/usr/include/eigen3
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblaser_geometry.a  CMakeFiles/laser_geometry.dir/src/laser_geometry.cpp.o
+/usr/bin/ranlib liblaser_geometry.a
